@@ -1,0 +1,106 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-block: 18px;
+  transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
+
+  &.nav--scrolled {
+    background: rgba(7, 7, 14, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 1px 0 var(--border);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__logo {
+    font-size: 1.375rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    transition: color var(--transition);
+
+    &:hover { color: var(--color-primary); }
+  }
+
+  &__logo-dot {
+    color: var(--color-primary);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    @media (max-width: 640px) {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(7, 7, 14, 0.96);
+      backdrop-filter: blur(16px);
+      padding: 16px 24px 24px;
+      border-bottom: 1px solid var(--border);
+      gap: 4px;
+
+      &.nav__links--open {
+        display: flex;
+      }
+    }
+  }
+
+  &__link {
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color var(--transition), background var(--transition);
+
+    &:hover,
+    &.nav__link--active {
+      color: var(--text-primary);
+      background: var(--color-primary-dim);
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    cursor: pointer;
+
+    @media (max-width: 640px) {
+      display: flex;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      background: var(--text-secondary);
+      border-radius: 2px;
+      transition: transform var(--transition), opacity var(--transition), width var(--transition);
+      transform-origin: center;
+    }
+
+    &.nav__burger--open {
+      span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      span:nth-child(2) { opacity: 0; width: 0; }
+      span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+  }
+}

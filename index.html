@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Роман Рябченко — Frontend-разработчик. React, TypeScript, Vue.js, Full-Stack." />
+    <meta property="og:title" content="Роман Рябченко — Frontend Developer" />
+    <meta property="og:description" content="4+ года коммерческой разработки. React / TypeScript / Vue.js. Fullstack от идеи до деплоя." />
+    <meta property="og:type" content="website" />
+    <title>Роман Рябченко — Frontend Developer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237b6ff0'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='16' fill='white'>RR</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div class="nav__container container">
+        <a href="#hero" class="nav__logo" aria-label="На главную">
+          RR<span class="nav__logo-dot">.</span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <ul class="nav__links" id="navLinks">
+            <li><a href="#about" class="nav__link">Обо мне</a></li>
+            <li><a href="#work" class="nav__link">Подход</a></li>
+            <li><a href="#cases" class="nav__link">Кейсы</a></li>
+            <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="nav__burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Frontend Developer</p>
+            <h1 class="hero__name">
+              Роман<br />
+              <span class="hero__name-gradient">Рябченко</span>
+            </h1>
+            <p class="hero__role">
+              <span class="hero__role-prefix">Специализируюсь на&nbsp;</span>
+              <span class="hero__role-typed" id="typedRole" aria-live="polite"></span>
+              <span class="hero__role-cursor">|</span>
+            </p>
+            <p class="hero__desc">
+              4+ года коммерческой разработки. Строю SPA-приложения с нуля,
+              интегрирую платёжные системы, работаю с AI API.
+              Умею довести задачу от постановки до деплоя.
+            </p>
+            <div class="hero__actions">
+              <a href="#cases" class="btn btn--primary">Смотреть кейсы</a>
+              <a href="#contact" class="btn btn--outline">Написать мне</a>
+            </div>
+            <div class="hero__social">
+              <a href="https://github.com/RomanTJM" target="_blank" rel="noopener noreferrer"
+                 class="hero__social-link" aria-label="GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="https://t.me/RomanTJM" target="_blank" rel="noopener noreferrer"
+                 class="hero__social-link" aria-label="Telegram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.92.44l-2.56-1.88-1.24 1.2c-.14.14-.26.26-.52.26l.18-2.6 4.72-4.26c.2-.18-.04-.28-.32-.1L8.36 14.4l-2.5-.78c-.54-.16-.56-.54.12-.8l9.78-3.78c.46-.16.86.12.68.76z"/>
+                </svg>
+              </a>
+              <a href="mailto:roman.sk8@bk.ru" class="hero__social-link" aria-label="Email">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="code-block">
+              <div class="code-block__header">
+                <span class="code-block__dot code-block__dot--red"></span>
+                <span class="code-block__dot code-block__dot--yellow"></span>
+                <span class="code-block__dot code-block__dot--green"></span>
+                <span class="code-block__filename">uventy.ts</span>
+              </div>
+              <pre class="code-block__body"><code><span class="ct-keyword">const</span> <span class="ct-fn">useTickets</span> = () <span class="ct-keyword">=></span> {
+  <span class="ct-keyword">const</span> queryClient = <span class="ct-fn">useQueryClient</span>();
+
+  <span class="ct-keyword">return</span> <span class="ct-fn">useQuery</span>({
+    queryKey: [<span class="ct-string">'events'</span>],
+    queryFn: <span class="ct-keyword">async</span> () <span class="ct-keyword">=></span> {
+      <span class="ct-keyword">const</span> { data } = <span class="ct-keyword">await</span> supabase
+        .<span class="ct-fn">from</span>(<span class="ct-string">'events'</span>)
+        .<span class="ct-fn">select</span>(<span class="ct-string">'*, venue(*)'</span>)
+        .<span class="ct-fn">eq</span>(<span class="ct-string">'status'</span>, <span class="ct-string">'active'</span>);
+      <span class="ct-keyword">return</span> data;
+    },
+    staleTime: <span class="ct-num">1000</span> * <span class="ct-num">60</span> * <span class="ct-num">5</span>,
+  });
+};</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <span class="section__label">01</span>
+            <h2 class="section__title">Обо мне</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text" data-animate>
+              <p>
+                Frontend-разработчик с 4+ годами коммерческой разработки. Специализируюсь на
+                React&nbsp;/&nbsp;TypeScript и Vue.js, строю SPA-приложения с нуля: компонентная
+                архитектура, state management, интеграция платёжных систем.
+              </p>
+              <p>
+                Параллельно закрываю backend-задачи: REST API на PHP и Python, базы данных
+                MySQL&nbsp;/&nbsp;PostgreSQL, администрирование серверов Ubuntu&nbsp;+&nbsp;Nginx.
+                Работаю с AI API (ChatGPT, Gemini, Claude) — строю RAG-системы и AI-ассистентов
+                с динамическим контекстом промптов.
+              </p>
+
+              <div class="about__stats">
+                <div class="about__stat">
+                  <span class="about__stat-num">4+</span>
+                  <span class="about__stat-label">года опыта</span>
+                </div>
+                <div class="about__stat">
+                  <span class="about__stat-num">2</span>
+                  <span class="about__stat-label">компании</span>
+                </div>
+                <div class="about__stat">
+                  <span class="about__stat-num">B2</span>
+                  <span class="about__stat-label">English</span>
+                </div>
+                <div class="about__stat">
+                  <span class="about__stat-num">∞</span>
+                  <span class="about__stat-label">кофе в день</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__stack" data-animate>
+              <h3 class="about__stack-title">Стек</h3>
+              <div class="stack-groups">
+                <div class="stack-group">
+                  <p class="stack-group__label">Frontend</p>
+                  <div class="stack-group__tags">
+                    <span class="tag tag--primary">React 18</span>
+                    <span class="tag tag--primary">TypeScript</span>
+                    <span class="tag tag--primary">Vue.js</span>
+                    <span class="tag tag--primary">Next.js</span>
+                    <span class="tag">Redux Toolkit</span>
+                    <span class="tag">TanStack Query</span>
+                    <span class="tag">React Hook Form</span>
+                    <span class="tag">SCSS / Sass</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Ant Design</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">Webpack</span>
+                  </div>
+                </div>
+                <div class="stack-group">
+                  <p class="stack-group__label">Backend / AI</p>
+                  <div class="stack-group__tags">
+                    <span class="tag tag--cyan">Node.js</span>
+                    <span class="tag tag--cyan">PHP</span>
+                    <span class="tag tag--cyan">Python</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Stripe API</span>
+                    <span class="tag">Claude / GPT / Gemini</span>
+                    <span class="tag">RAG Systems</span>
+                  </div>
+                </div>
+                <div class="stack-group">
+                  <p class="stack-group__label">DevOps</p>
+                  <div class="stack-group__tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Vercel</span>
+                    <span class="tag">Nginx</span>
+                    <span class="tag">Ubuntu</span>
+                    <span class="tag">Cloudflare</span>
+                    <span class="tag">Git / GitHub</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <span class="section__label">02</span>
+            <h2 class="section__title">Как я работаю</h2>
+          </div>
+
+          <div class="work__grid">
+            <div class="work-card" data-animate>
+              <div class="work-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+              <h3 class="work-card__title">Проблема → Решение</h3>
+              <p class="work-card__text">
+                Сначала понимаю бизнес-задачу, потом выбираю инструмент.
+                Не навязываю технологии — выбираю то, что решает проблему
+                с минимальными накладными расходами.
+              </p>
+            </div>
+
+            <div class="work-card" data-animate>
+              <div class="work-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <h3 class="work-card__title">Полный цикл</h3>
+              <p class="work-card__text">
+                Могу самостоятельно провести задачу от дизайна в Figma
+                до деплоя на сервер: вёрстка, логика, API, база данных,
+                настройка Nginx и SSL.
+              </p>
+            </div>
+
+            <div class="work-card work-card--accent" data-animate>
+              <div class="work-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+              </div>
+              <h3 class="work-card__title">AI в рабочем процессе</h3>
+              <p class="work-card__text">
+                Использую Claude, ChatGPT и Copilot как инструменты — для
+                генерации бойлерплейта, code review, написания тестов.
+                Строю AI-фичи в продуктах: RAG-ассистенты, tool calling,
+                генерация контента через API.
+              </p>
+              <span class="work-card__badge">AI-интеграции</span>
+            </div>
+
+            <div class="work-card" data-animate>
+              <div class="work-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3 class="work-card__title">Командная работа</h3>
+              <p class="work-card__text">
+                Участвую в Code Review, провожу планирование спринтов в Agile
+                / Scrum, пишу понятный код, который не надо объяснять на
+                встречах. Git Flow, чистые коммиты.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases section" id="cases">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <span class="section__label">03</span>
+            <h2 class="section__title">Кейсы</h2>
+          </div>
+
+          <div class="cases__grid">
+            <article class="case-card case-card--featured" data-animate>
+              <div class="case-card__header">
+                <div class="case-card__meta">
+                  <span class="case-card__company">Uventy · 2025 — н.в.</span>
+                  <span class="case-card__role">Full-Stack Developer</span>
+                </div>
+                <a href="https://github.com/RomanTJM" target="_blank" rel="noopener noreferrer"
+                   class="case-card__link" aria-label="GitHub репозиторий">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="case-card__title">Uventy — платформа продажи билетов</h3>
+              <p class="case-card__desc">
+                E-commerce платформа для продажи билетов на спортивные и развлекательные мероприятия.
+                SPA для покупателей (React + TypeScript), панель администратора, мобильное приложение
+                для сканирования QR-кодов. Stripe мультиаккаунт, Supabase Edge Functions, деплой
+                на Vercel.
+              </p>
+              <ul class="case-card__achievements">
+                <li>Снизил количество лишних API-запросов на ~40% через кэширование TanStack Query</li>
+                <li>Интегрировал Stripe API: мультиаккаунтовые платежи, webhook'и, возвраты</li>
+                <li>Разработал REST API на PHP / Python: промокоды, права доступа, email, PDF</li>
+                <li>AI-ассистент с динамическим контекстом (RAG) и слоем безопасности</li>
+              </ul>
+              <div class="case-card__tags">
+                <span class="tag tag--primary">React 18</span>
+                <span class="tag tag--primary">TypeScript</span>
+                <span class="tag">Redux Toolkit</span>
+                <span class="tag">TanStack Query</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">Ant Design</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Python</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </article>
+
+            <article class="case-card" data-animate>
+              <div class="case-card__header">
+                <div class="case-card__meta">
+                  <span class="case-card__company">Uventy · 2025</span>
+                  <span class="case-card__role">Frontend Developer</span>
+                </div>
+              </div>
+              <h3 class="case-card__title">ИННОПРОМ — виджет выставки</h3>
+              <p class="case-card__desc">
+                Встраиваемый Vue.js-виджет для 5+ международных выставок
+                (innoprom, bioprom, biotechmed, innofood). Мультиязычность RU/EN,
+                фильтрация по году, треку и залу.
+              </p>
+              <div class="case-card__tags">
+                <span class="tag tag--cyan">Vue.js</span>
+                <span class="tag">Swiper</span>
+                <span class="tag">vue-multiselect</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">Webpack</span>
+              </div>
+            </article>
+
+            <article class="case-card" data-animate>
+              <div class="case-card__header">
+                <div class="case-card__meta">
+                  <span class="case-card__company">IQ DEV · 2022–2025</span>
+                  <span class="case-card__role">Frontend Developer</span>
+                </div>
+                <span class="case-card__nda">NDA</span>
+              </div>
+              <h3 class="case-card__title">Автохолдинг — дилерский портал</h3>
+              <p class="case-card__desc">
+                Адаптивная вёрстка с нуля. Система фильтрации автомобилей,
+                личный кабинет пользователя, многошаговые формы создания
+                курсов с динамическими полями.
+              </p>
+              <div class="case-card__tags">
+                <span class="tag tag--primary">React 18</span>
+                <span class="tag tag--primary">TypeScript</span>
+                <span class="tag">Redux</span>
+                <span class="tag">React Hook Form</span>
+                <span class="tag">SCSS/BEM</span>
+                <span class="tag">Axios</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <span class="section__label">04</span>
+            <h2 class="section__title">Контакты</h2>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info" data-animate>
+              <p class="contact__lead">
+                Открыт к новым проектам и предложениям.
+                Напишите — отвечу в течение 24 часов.
+              </p>
+
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <svg class="contact__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <a href="mailto:roman.sk8@bk.ru" class="contact__link">roman.sk8@bk.ru</a>
+                </li>
+                <li class="contact__item">
+                  <svg class="contact__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                  </svg>
+                  <a href="tel:+79220719089" class="contact__link">+7 (922) 071-90-89</a>
+                </li>
+                <li class="contact__item">
+                  <svg class="contact__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.92.44l-2.56-1.88-1.24 1.2c-.14.14-.26.26-.52.26l.18-2.6 4.72-4.26c.2-.18-.04-.28-.32-.1L8.36 14.4l-2.5-.78c-.54-.16-.56-.54.12-.8l9.78-3.78c.46-.16.86.12.68.76z"/>
+                  </svg>
+                  <a href="https://t.me/RomanTJM" target="_blank" rel="noopener noreferrer" class="contact__link">@RomanTJM</a>
+                </li>
+                <li class="contact__item">
+                  <svg class="contact__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <a href="https://github.com/RomanTJM" target="_blank" rel="noopener noreferrer" class="contact__link">RomanTJM</a>
+                </li>
+              </ul>
+
+              <div class="contact__ai-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"/>
+                </svg>
+                <span>Ответ на письмо генерируется с помощью Gemini AI — получите персонализированное подтверждение</span>
+              </div>
+            </div>
+
+            <div class="contact__form-wrap" data-animate>
+              <form class="form" id="contactForm" novalidate>
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="name">Имя <span class="form__required" aria-hidden="true">*</span></label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Ваше имя"
+                      autocomplete="name"
+                      required
+                    />
+                    <span class="form__error" id="nameError" role="alert"></span>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="phone">Телефон <span class="form__required" aria-hidden="true">*</span></label>
+                    <input
+                      class="form__input"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+7 (999) 000-00-00"
+                      autocomplete="tel"
+                      required
+                    />
+                    <span class="form__error" id="phoneError" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="email">Email <span class="form__required" aria-hidden="true">*</span></label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="form__error" id="emailError" role="alert"></span>
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="comment">Комментарий</label>
+                  <textarea
+                    class="form__textarea"
+                    id="comment"
+                    name="comment"
+                    placeholder="Расскажите о вашем проекте или задаче..."
+                    rows="4"
+                  ></textarea>
+                </div>
+
+                <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
+                  <span class="btn__text">Отправить</span>
+                  <span class="btn__spinner" hidden aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="form__status" id="formStatus" hidden role="status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copy">© 2026 Роман Рябченко</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
