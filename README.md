@@ -18,8 +18,7 @@
 ### 1. Клонировать и установить зависимости
 
 ```bash
-git clone https://github.com/RomanTJM/portfolio_landing
-cd portfolio-landing
+git clone https://github.com/RomanTJM/laboratory_internet
 npm install
 ```
 
@@ -72,7 +71,6 @@ vercel --prod
 ## Структура проекта
 
 ```
-portfolio-landing/
 ├── api/
 │   ├── contact.ts          # Serverless function: валидация, Nodemailer, Gemini AI
 │   └── server.dev.ts       # Локальный dev-сервер для API (порт 3002)
